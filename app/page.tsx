@@ -12,10 +12,7 @@ export default function Home() {
 
       <div className="grid">
         {recipes.map((recipe) => (
-          <RecipeCard
-            key={recipe.id}
-            recipe={recipe}
-          />
+          <RecipeCard key={recipe.id} recipe={recipe} />
         ))}
       </div>
     </main>
